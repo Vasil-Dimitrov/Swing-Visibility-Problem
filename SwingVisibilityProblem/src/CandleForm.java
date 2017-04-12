@@ -65,7 +65,8 @@ public class CandleForm extends JDialog {
 	 * Create the dialog.
 	 */
 	public CandleForm() {
-		setAlwaysOnTop(true);
+		// If the setAlwaysOnTop here is removed the problem is fixed //
+		setAlwaysOnTop(true); // <---- THIS HERE
 //		setIconImage(Toolkit.getDefaultToolkit().getImage(CandleForm.class.getResource("/psi01/resources/candle_20.png")));
 		setResizable(false);
 		initComponents();
